@@ -78,12 +78,12 @@
         <div id="u5_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u6" class="text" style="visibility: visible;">
-          <p><span>当用户上传图片时没有勾选原图，则需要对所选择的图片进行压缩处理（超过200k的进行压缩）</span></p><p><span><br></span></p><p><span>压缩规则：</span></p><p><span>a，图片宽或者高均小于或等于1280时图片尺寸保持不变，但仍然经过图片压缩处理，得到小文件的同尺寸图片</span></p><p><span><br></span></p><p><span>b，宽或者高大于1280，但是图片宽度高度比小于或等于2，则将图片宽或者高取大的等比压缩至1280</span></p><p><span><br></span></p><p><span>c，宽或者高大于1280，但是图片宽高比大于2时，并且宽以及高均大于1280，则宽或者高取小的等比压缩至1280</span></p><p><span><br></span></p><p><span>d，宽或者高大于1280，但是图片宽高比大于2时，并且宽或者高其中一个小于1280，则压缩至同尺寸的小文件图片</span></p><p><span><br></span></p><p><span>题外话：Android端建议用鲁班，最接近于微信的压缩方式&nbsp;&nbsp; </span></p>
+          <p><span>当用户上传图片时没有勾选原图，则需要对所选择的图片进行压缩处理（超过200k的进行压缩）</span></p><p><span><br></span></p><p><span>压缩规则：</span></p><p><span>宽高均 &lt;= 1280，图片尺寸大小保持不变</span></p><p><span>宽或高 &gt; 1280 &amp;&amp; 宽高比 &lt;= 2，取较大值等于1280，较小值等比例压缩</span></p><p><span>宽或高 &gt; 1280 &amp;&amp; 宽高比 &gt; 2 &amp;&amp; 宽或高 &lt; 1280，图片尺寸大小保持不变</span></p><p><span>宽高均 &gt; 1280 &amp;&amp; 宽高比 &gt; 2，取较小值等于1280，较大值等比例压缩</span></p><p><span><br></span></p><p><span><br></span></p><p><span>题外话：Android端的鲁班压缩算法可以参考，最接近于微信的压缩方式&nbsp;&nbsp; </span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u7" class="ax_default _文本段落">
+      <div id="u7" class="ax_default _文本段落 ax_default_hidden" style="display: none; visibility: hidden">
         <div id="u7_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u8" class="text" style="visibility: visible;">
@@ -92,7 +92,7 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u9" class="ax_default label">
+      <div id="u9" class="ax_default label ax_default_hidden" style="display: none; visibility: hidden">
         <div id="u9_div" class=""></div>
         <!-- Unnamed () -->
         <div id="u10" class="text" style="visibility: visible;">
